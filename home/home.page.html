@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Facturas Pos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+      <app-configuracion *ngIf="configuracion"></app-configuracion>
+
+      <app-ordenes *ngIf="ordenes"></app-ordenes>
+
+      <app-ventas *ngIf="ventas"></app-ventas>
+  </ion-grid>
+</ion-content>
